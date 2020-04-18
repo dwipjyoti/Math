@@ -1,0 +1,22 @@
+import java.util.Scanner;
+//Pallindrome Number is a Number which the reverse of that number
+public class PallindromeNumber{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a number");
+    int num=sc.nextInt();
+    int rev=0;
+    int a=num;
+    while(a!=0){
+      int rem=a%10;
+      rev=rev*10+rem;
+      a=a/10;
+    }
+    if(rev==num){
+      System.out.println("Number is Pallindrome");
+    }
+    else{
+      System.out.println("Number is Not Pallindrome");
+    }
+  }
+}
