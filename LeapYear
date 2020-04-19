@@ -27,7 +27,7 @@ public class LeapYear{
      
 //YOU CAN ALSO CHECK IN ONE "IF-ELSE" CLAUSE
 
-if((year%4==0) || (year%100==0 && year%400==0)){
+if((year%400==0) || (year%4==0 && year%100!=0)){
     	System.out.println("leap");
     }
     else {
