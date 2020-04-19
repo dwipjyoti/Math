@@ -1,7 +1,7 @@
 /* PRIME NUMBER
  * It is a number which is divisible by 1 and Itself
  * 1st we input a number
- * Here we take a for loop which starts from 2 and ends with (number-1)
+ * Here we take a for loop which starts from i=2 and ends with i=(number-1)
  * The number is then divided by each value of "i" inside for loop
  * If the number gets divided by any of value of "i"
  * That means that number is not a Prime Number
