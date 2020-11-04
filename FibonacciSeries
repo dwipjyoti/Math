@@ -1,3 +1,11 @@
+/* Fibonacci series means sum of previous two terms
+ * Fibonacci series :-  0 1 1 2 3 5 7 ...............
+ *
+ * to find fibonacci you will always need the First and Second term that is 0 and 1
+ */
+
+
+
 import java.util.Scanner;
 public class FibonacciSeries{
   public static void main(String args[]){
@@ -11,11 +19,13 @@ public class FibonacciSeries{
     
     System.out.print("First "+term+" Fibonacci terms are:- [ ");
     for(int i=1;i<=term;i++){
-        System.out.print(sum+" ");
+        System.out.print(sum+" ");//print at every iteration you will get the series
         a=b;
         b=sum;
         sum=a+b;
       }
       System.out.println("]");
+      
+      //if you return b at last then that will the nth term of fibonacci as asked in question
     }
  }
