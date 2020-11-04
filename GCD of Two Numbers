@@ -1,0 +1,22 @@
+/* Greatest Common Divisor
+ * The largest number that divides both the number which gives remainder Zero
+ * example:- (20 and 40).......gcd=20.....before 20 there are many numbers that divide 20 and 40 but 20 is the largest which is GCD
+ * example:- (4 and 5).........gcd=1......1 is the only number that divides both the number
+ */
+ 
+ 
+/* Iterative Approach */
+
+public int GCD(int a,int b){
+    int gcd=1;//if no numbers divide then gcd = 1  because 1 divides every number
+    
+    for(int i=2;i<=a && i<=b;i++){//as the range is in increasing order so within range the largest number that divides both will come out to be gcd
+        if(a%i==0 && b%i==0){
+            gcd=i;
+        }
+    
+    }
+    return gcd;
+
+}
+
