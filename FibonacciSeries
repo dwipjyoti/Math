@@ -1,7 +1,7 @@
 /* Fibonacci series means sum of previous two terms
  * Fibonacci series :-  0 1 1 2 3 5 7 ...............
- *
- * to find fibonacci you will always need the First and Second term that is 0 and 1
+ 
+ * To find fibonacci you will always need the First and Second term that is 0 and 1
  */
 
 
