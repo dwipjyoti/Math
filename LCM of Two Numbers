@@ -1,0 +1,30 @@
+/* Lowest Common "Multiple"
+ * A multiple is a number which you get when you ultiply a number by a whole number (greater than 0)
+ * The least common multiple of two numbers is the “smallest non-zero common number” which is a multiple of both the numbers.
+ * example:- (4 and 8)....lcm of 2 are(2,4) and lcm of 4 are(2,4,8)....common are (2,4).....the lowest between them is 2
+ 
+ * WE DONT CONSIDER 0 as multiple.... as 0 multiplied by any number will give 0
+ 
+ * If you dont find any common multiple, then return multiplication of both the number
+ * example:- (4 and 8)....lcm of 2 are(2,4) and lcm of 4 are(2,4,8)....common are (2,4).....the lowest between them is 2
+ * example:- (4 and 5)....lcm of 4 are (2,4) and lcm of 5 are (5)......No Common between them.......return (4*5)=20  as you are to return common multiple
+ 
+ * Find multiple byt dividing that number
+ */
+ 
+ public int lcm(int a,int b){
+    int multiple=1;
+    for(int i=2;i<=a && i<=b;i++){
+        if(a%i==0 && b%i==0){
+            multiple=i;
+            break;//you are to get the lowest multiple of both so break
+        }
+    }
+    if(mutiple!=1){//that means no number is common between them
+        return (a*b);
+    }
+    else{
+        return multiple;//we got a common multiple between them
+    }
+ 
+ }
