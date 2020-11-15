@@ -10,9 +10,10 @@ public class ArmstrongNumber{
     
     while(a!=0){
       int rem=a%10;
-      rev=rev+(rem*rem*rem);
+      rev=rev+(rem*rem*rem);//Math.pow(rem,3)
       a=a/10;
     }
+    
     
     if(rev==num){
       System.out.println(num+" is Armstrong Number");
